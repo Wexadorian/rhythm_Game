@@ -169,38 +169,38 @@ MonoBehaviour:
   spawnPoint2: {fileID: 1972708253}
   musicSource: {fileID: 678637620}
   notes:
-  - time: 6.7
-  - time: 10.7
-  - time: 11.7
-  - time: 14.7
-  - time: 16.7
-  - time: 17.7
-  - time: 18.7
-  - time: 19.7
-  - time: 22.7
-  - time: 26.7
-  - time: 27.7
-  - time: 30.7
-  - time: 32.7
-  - time: 33.7
-  - time: 34.7
-  - time: 35.7
-  - time: 38.7
-  - time: 42.7
-  - time: 43.7
-  - time: 46.7
-  - time: 48.7
-  - time: 49.7
-  - time: 50.7
-  - time: 51.7
-  - time: 54.7
-  - time: 58.7
-  - time: 59.7
-  - time: 62.7
-  - time: 64.7
-  - time: 65.7
-  - time: 66.7
-  - time: 67.7
+  - time: 6.75
+  - time: 10.75
+  - time: 11.75
+  - time: 14.75
+  - time: 16.75
+  - time: 17.75
+  - time: 18.75
+  - time: 19.75
+  - time: 22.75
+  - time: 26.75
+  - time: 27.75
+  - time: 30.75
+  - time: 32.75
+  - time: 33.75
+  - time: 34.75
+  - time: 35.75
+  - time: 38.75
+  - time: 42.75
+  - time: 43.75
+  - time: 46.75
+  - time: 48.75
+  - time: 49.75
+  - time: 50.75
+  - time: 51.75
+  - time: 54.75
+  - time: 58.75
+  - time: 59.75
+  - time: 62.75
+  - time: 64.75
+  - time: 65.75
+  - time: 66.75
+  - time: 67.75
 --- !u!1 &136900185
 GameObject:
   m_ObjectHideFlags: 0
