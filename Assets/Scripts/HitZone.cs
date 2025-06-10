@@ -5,6 +5,7 @@ public class HitZone : MonoBehaviour
 {
 
     private GameObject currentNote = null;
+    
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +20,7 @@ public class HitZone : MonoBehaviour
         if (other.CompareTag("Note") && other.gameObject == currentNote)
         {
             //fix this, stop it from outputting every time
-            Debug.Log("Mils!");
+            
 
             Destroy(currentNote);
             currentNote = null;
