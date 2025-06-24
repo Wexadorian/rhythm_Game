@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class NoteSpawner : MonoBehaviour
 {
-    public GameObject notePrefab;        // Drag the Note prefab here in the Inspector
-    public Transform spawnPoint;         // Where the notes appear from
-    public AudioSource musicSource;      // Your song audio source
+    public GameObject notePrefab;
+    public GameObject winNotePrefab;
+    public Transform spawnPoint;         
+    public AudioSource musicSource;     
 
     [System.Serializable]
     public class NoteData
     {
-        public float time;               // When to spawn the note (in seconds)
+        public float time;         
     }
 
     public List<NoteData> notes = new List<NoteData>();
     private int noteIndex = 0;
+    public List<NoteData> winNotes = new List<NoteData>();
+    private int winNoteIndex = 0;
 
     void Update()
     {
@@ -24,6 +27,16 @@ public class NoteSpawner : MonoBehaviour
             SpawnNote();
             noteIndex++;
         }
+        if (winNoteIndex < winNotes.Count && musicSource.time >= winNotes[winNoteIndex].time)
+        {
+            SpawnFinalWinNote();
+            winNoteIndex++;
+        }
+    }
+
+    void SpawnFinalWinNote()
+    {
+        Instantiate(winNotePrefab, spawnPoint.position, Quaternion.identity);
     }
 
     void SpawnNote()

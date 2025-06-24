@@ -1,9 +1,10 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class HitZone : MonoBehaviour
 {
-
+    public string rating;
     private GameObject currentNote = null;
     
 
@@ -11,21 +12,20 @@ public class HitZone : MonoBehaviour
     {
         if (other.CompareTag("Note"))
         {
+     
             currentNote = other.gameObject;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Note") && other.gameObject == currentNote)
-        {
-            //fix this, stop it from outputting every time
+            Hit();
             
-
-            Destroy(currentNote);
-            currentNote = null;
         }
+        
+        
+        
+        
+
     }
+
+
+
 
 
     void Update()
@@ -33,26 +33,31 @@ public class HitZone : MonoBehaviour
         if (currentNote != null && Input.GetKeyDown(KeyCode.Space))
         {
             float distance = Mathf.Abs(currentNote.transform.position.y - transform.position.y);
-            string rating;
+            
 
-            if (distance < 0.1f)
-            {
-                rating = "Perfect";
-            }
-            else if (distance < 0.25f)
-            {
-                rating = "Good";
-            }
-            else
-            {
-                rating = "Miss";
-            }
-
-            Debug.Log(rating);
+           
 
             Destroy(currentNote);
             currentNote = null;
         }
+
+
     }
+
+    public void Hit()
+    {
+        rating = "Hit";
+        Debug.Log(rating);
+    }
+    public void Miss()
+    {
+   
+        
+            rating = "Miss";
+            Debug.Log(rating);
+        
+       
+    }
+   
 
 }
