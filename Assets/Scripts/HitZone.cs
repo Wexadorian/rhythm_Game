@@ -1,63 +1,82 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class HitZone : MonoBehaviour
 {
     public string rating;
     private GameObject currentNote = null;
-    
+    private HealthManager healthManager;
+    public TextMeshProUGUI ratingText;
+
+    private void Start()
+    {
+        healthManager = FindFirstObjectByType<HealthManager>();
+    }
+    private void ShowRating(string text)
+    {
+        ratingText.text = text;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Note"))
         {
-     
             currentNote = other.gameObject;
-            Hit();
-            
         }
-        
-        
-        
-        
-
     }
 
-
-
-
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Note"))
+        {
+            if (other.gameObject == currentNote)
+            {
+                currentNote = null;
+            }
+        }
+    }
 
     void Update()
     {
-        if (currentNote != null && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            float distance = Mathf.Abs(currentNote.transform.position.y - transform.position.y);
-            
+            if (currentNote != null)
+            {
+                float distance = Mathf.Abs(currentNote.transform.position.y - transform.position.y);
 
-           
 
-            Destroy(currentNote);
-            currentNote = null;
+                Hit();
+
+                Destroy(currentNote);
+                currentNote = null;
+            }
+            else
+            {
+                Miss();
+            }
         }
-
-
     }
 
     public void Hit()
     {
         rating = "Hit";
         Debug.Log(rating);
+        ShowRating("Hit!");
     }
+
     public void Miss()
     {
-   
-        
-            rating = "Miss";
-            Debug.Log(rating);
-        
-       
+        rating = "Miss";
+        Debug.Log(rating);
+        ShowRating("Miss!");
+        healthManager.TakeDamage(1);
     }
-   
 
+    public void Miss1()
+    {
+        rating = "Miss";
+        Debug.Log(rating);
+        ShowRating("Miss!");
+        
+    }
 }

@@ -33,7 +33,7 @@ public class DeathZone : MonoBehaviour
             {
 
                 healthManager.TakeDamage(1);
-                hitZone.Miss();
+                hitZone.Miss1();
             }
         }
 
