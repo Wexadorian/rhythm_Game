@@ -23,6 +23,7 @@ public class HitZone : MonoBehaviour
         {
             currentNote = other.gameObject;
         }
+
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -77,6 +78,14 @@ public class HitZone : MonoBehaviour
         rating = "Miss";
         Debug.Log(rating);
         ShowRating("Miss!");
-        
+
+    }
+
+    public void Rest()
+    {
+        rating = "Rest";
+        Debug.Log(rating);
+        ShowRating("Rest!");
+
     }
 }

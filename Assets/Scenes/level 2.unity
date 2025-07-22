@@ -119,88 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &48172904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 48172906}
-  - component: {fileID: 48172907}
-  m_Layer: 0
-  m_Name: QuaverSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &48172906
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48172904}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2328, y: 0.23590004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &48172907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48172904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20bc4d6e6c8a22a4e96f4673b1b50e7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quaverPrefab: {fileID: 3571435771288117702, guid: 94589266d7b2e4445b3d13e88ca6e9ca, type: 3}
-  quaver2Prefab: {fileID: 4928534831041723793, guid: 718e6d06c615017449b555b0569df5bf, type: 3}
-  spawnPoint: {fileID: 136900186}
-  spawnPoint2: {fileID: 1972708253}
-  musicSource: {fileID: 678637620}
-  notes:
-  - time: 6.75
-  - time: 10.75
-  - time: 11.75
-  - time: 14.75
-  - time: 16.75
-  - time: 17.75
-  - time: 18.75
-  - time: 19.75
-  - time: 22.75
-  - time: 26.75
-  - time: 27.75
-  - time: 30.75
-  - time: 32.75
-  - time: 33.75
-  - time: 34.75
-  - time: 35.75
-  - time: 38.75
-  - time: 42.75
-  - time: 43.75
-  - time: 46.75
-  - time: 48.75
-  - time: 49.75
-  - time: 50.75
-  - time: 51.75
-  - time: 54.75
-  - time: 58.75
-  - time: 59.75
-  - time: 62.75
-  - time: 64.75
-  - time: 65.75
-  - time: 66.75
-  - time: 67.75
 --- !u!1 &136900185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899458912}
   - component: {fileID: 899458913}
+  - component: {fileID: 899458914}
   m_Layer: 5
   m_Name: Heart
   m_TagString: Untagged
@@ -1520,6 +1439,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &899458914
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899458911}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5c002c5066384f0459b0abf120843631, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &926096953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1608,7 @@ GameObject:
   - component: {fileID: 1033906861}
   - component: {fileID: 1033906860}
   m_Layer: 0
-  m_Name: New Piskel-1.png (6)_0 (1)
+  m_Name: HitIndicatorBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1754,7 +1695,7 @@ GameObject:
   - component: {fileID: 1048051313}
   - component: {fileID: 1048051312}
   m_Layer: 0
-  m_Name: New Piskel-1.png (6)_0
+  m_Name: HitZoneBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2287,7 +2228,7 @@ GameObject:
   - component: {fileID: 1649860610}
   - component: {fileID: 1649860609}
   m_Layer: 0
-  m_Name: CrotchetSpawner
+  m_Name: DottedQuaverSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2305,45 +2246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00614499bee39d45a500ebd09d3d5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notePrefab: {fileID: 4928534831041723793, guid: 718e6d06c615017449b555b0569df5bf, type: 3}
+  notePrefab: {fileID: 4928534831041723793, guid: b7f932063a0652b4d8adc6cec6708396, type: 3}
   winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
   spawnPoint: {fileID: 136900186}
   musicSource: {fileID: 678637620}
   notes:
-  - time: 5.5
-  - time: 7.5
-  - time: 8.5
-  - time: 9.5
-  - time: 12.5
-  - time: 13.5
-  - time: 15.5
-  - time: 20.5
-  - time: 21.5
-  - time: 23.5
-  - time: 24.5
-  - time: 25.5
-  - time: 28.5
-  - time: 29.5
-  - time: 31.5
-  - time: 36.5
-  - time: 37.5
-  - time: 39.5
-  - time: 40.5
-  - time: 41.5
-  - time: 44.5
-  - time: 45.5
-  - time: 47.5
-  - time: 52.5
-  - time: 53.5
-  - time: 55.5
-  - time: 56.5
-  - time: 57.5
-  - time: 60.5
-  - time: 61.5
-  - time: 63.5
-  - time: 68.5
-  winNotes:
   - time: 1
+  - time: 3
+  - time: 5
+  winNotes: []
 --- !u!4 &1649860610
 Transform:
   m_ObjectHideFlags: 0
@@ -2534,6 +2445,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1904495264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904495266}
+  - component: {fileID: 1904495265}
+  m_Layer: 0
+  m_Name: DottedQuaverRestSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1904495265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904495264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00614499bee39d45a500ebd09d3d5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 4928534831041723793, guid: 43a5edb6d75024547b824fc6e2ca5070, type: 3}
+  winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
+  spawnPoint: {fileID: 136900186}
+  musicSource: {fileID: 678637620}
+  notes:
+  - time: 2
+  - time: 4
+  winNotes: []
+--- !u!4 &1904495266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904495264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2328, y: 0.23590004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972708251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,7 +2745,7 @@ GameObject:
   - component: {fileID: 2060972765}
   - component: {fileID: 2060972764}
   m_Layer: 0
-  m_Name: New Piskel-1.png (5)_0
+  m_Name: DeathZoneBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2947,7 +2910,7 @@ SceneRoots:
   - {fileID: 560740132}
   - {fileID: 678637621}
   - {fileID: 1649860610}
-  - {fileID: 48172906}
+  - {fileID: 1904495266}
   - {fileID: 136900186}
   - {fileID: 1972708253}
   - {fileID: 2059599929}

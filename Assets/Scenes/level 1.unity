@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20bc4d6e6c8a22a4e96f4673b1b50e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quaverPrefab: {fileID: 3571435771288117702, guid: 94589266d7b2e4445b3d13e88ca6e9ca, type: 3}
+  quaverPrefab: {fileID: 4928534831041723793, guid: 5d258260485b4f049804570d4ec1ff4c, type: 3}
   quaver2Prefab: {fileID: 4928534831041723793, guid: 718e6d06c615017449b555b0569df5bf, type: 3}
   spawnPoint: {fileID: 136900186}
   spawnPoint2: {fileID: 1972708253}
@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 136900185}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.08, y: -0.06, z: -2}
+  m_LocalPosition: {x: 9.1, y: -0.06, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

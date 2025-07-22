@@ -37,6 +37,14 @@ public class DeathZone : MonoBehaviour
             }
         }
 
+        else if (other.CompareTag("BadNote"))
+        {
+            currentNote = other.gameObject;
+            Destroy(currentNote);
+            Debug.Log("BadNote");
+            hitZone.Rest();
+        }
+
         else
         {
             Debug.Log("Win!");
