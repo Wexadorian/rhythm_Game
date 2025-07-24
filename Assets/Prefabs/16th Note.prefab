@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6144031050524467554}
   - component: {fileID: -7747800566327557868}
   m_Layer: 0
-  m_Name: QuarterRest
-  m_TagString: BadNote
+  m_Name: 16th Note
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 4928534831041723793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -0.2956, z: -2}
-  m_LocalScale: {x: 0.25, y: 0.27559435, z: 1.0361979}
+  m_LocalPosition: {x: 0.6759, y: 0.25, z: -2}
+  m_LocalScale: {x: 0.14, y: 0.15967312, z: 0.61029756}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2654065831074929302, guid: a40eedaa05f81d74bab3c0845946e529, type: 3}
+  m_Sprite: {fileID: 4325066048813044288, guid: cea8b20feeb005143bbf18bd7ed70136, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -151,8 +151,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.45, y: 1.05}
-  m_Radius: 0.71
+  m_Offset: {x: -1.99, y: -6.23}
+  m_Radius: 2.29
 --- !u!114 &-7747800566327557868
 MonoBehaviour:
   m_ObjectHideFlags: 0

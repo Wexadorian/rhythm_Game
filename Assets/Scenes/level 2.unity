@@ -2204,8 +2204,7 @@ MonoBehaviour:
   winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
   spawnPoint: {fileID: 136900186}
   musicSource: {fileID: 678637620}
-  notes:
-  - time: 6
+  notes: []
   winNotes: []
 --- !u!4 &1519083083
 Transform:
@@ -2268,6 +2267,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1632491632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1632491634}
+  - component: {fileID: 1632491633}
+  m_Layer: 0
+  m_Name: forest_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &1632491633
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632491632}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1343518637512107228, guid: f43db046e3a48fa40ab2d76c32e15afe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 40, y: 22.480469}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1632491634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632491632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: -0.36640942, z: 33}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649860608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,9 +2388,9 @@ MonoBehaviour:
   spawnPoint: {fileID: 136900186}
   musicSource: {fileID: 678637620}
   notes:
-  - time: 1
-  - time: 3
-  - time: 5
+  - time: 2.5
+  - time: 2.875
+  - time: 3.25
   winNotes: []
 --- !u!4 &1649860610
 Transform:
@@ -2460,6 +2546,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1761741190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761741192}
+  - component: {fileID: 1761741191}
+  m_Layer: 0
+  m_Name: QuaverSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1761741191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761741190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00614499bee39d45a500ebd09d3d5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 4928534831041723793, guid: 709de89f9085c4a45bea06bdbba49042, type: 3}
+  winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
+  spawnPoint: {fileID: 136900186}
+  musicSource: {fileID: 678637620}
+  notes: []
+  winNotes: []
+--- !u!4 &1761741192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761741190}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2328, y: 0.23590004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889865393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,9 +2665,7 @@ MonoBehaviour:
   winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
   spawnPoint: {fileID: 136900186}
   musicSource: {fileID: 678637620}
-  notes:
-  - time: 2
-  - time: 4
+  notes: []
   winNotes: []
 --- !u!4 &1904495266
 Transform:
@@ -2872,6 +3006,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082023221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082023223}
+  - component: {fileID: 2082023222}
+  m_Layer: 0
+  m_Name: 16NoteSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2082023222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082023221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00614499bee39d45a500ebd09d3d5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 4928534831041723793, guid: 6e68c778f3accd747b5bd913615edcf6, type: 3}
+  winNotePrefab: {fileID: 8068645166274202929, guid: 559a0070920c5fc478aa2f8825bcbf43, type: 3}
+  spawnPoint: {fileID: 136900186}
+  musicSource: {fileID: 678637620}
+  notes: []
+  winNotes: []
+--- !u!4 &2082023223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082023221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2328, y: 0.23590004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120318266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,6 +3145,8 @@ SceneRoots:
   - {fileID: 560740132}
   - {fileID: 678637621}
   - {fileID: 1649860610}
+  - {fileID: 1761741192}
+  - {fileID: 2082023223}
   - {fileID: 1904495266}
   - {fileID: 1519083083}
   - {fileID: 136900186}
@@ -2975,3 +3161,4 @@ SceneRoots:
   - {fileID: 2060972765}
   - {fileID: 1048051313}
   - {fileID: 1033906861}
+  - {fileID: 1632491634}
