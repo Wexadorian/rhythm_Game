@@ -42,7 +42,7 @@ public class DeathZone : MonoBehaviour
             currentNote = other.gameObject;
             Destroy(currentNote);
             Debug.Log("BadNote");
-            hitZone.Rest();
+            
         }
 
         else

@@ -81,11 +81,5 @@ public class HitZone : MonoBehaviour
 
     }
 
-    public void Rest()
-    {
-        rating = "Rest";
-        Debug.Log(rating);
-        ShowRating("Rest!");
-
-    }
+    
 }
