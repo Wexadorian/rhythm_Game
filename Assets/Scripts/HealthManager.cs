@@ -7,6 +7,7 @@ public class HealthManager : MonoBehaviour
     public Slider healthBar;
     public int maxHealth = 3;
     private int currentHealth;
+    public string gameOverSceneName = "GameOverScene";
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class HealthManager : MonoBehaviour
 
     void GameOver()
     {
-        SceneManager.LoadScene("GameOverScene");
+        SceneManager.LoadScene(gameOverSceneName);
     }
 
     public void WinGame()

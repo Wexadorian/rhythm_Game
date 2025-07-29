@@ -28,4 +28,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(6);
     }
 
+    public void Level2Load()
+    {
+        SceneManager.LoadSceneAsync(7);
+    }
+
 }

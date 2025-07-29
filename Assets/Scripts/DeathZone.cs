@@ -6,6 +6,7 @@ public class DeathZone : MonoBehaviour
     private GameObject currentNote = null;
     private HealthManager healthManager;
     private HitZone hitZone;
+    public string winSceneName = "WinScene";
     public bool hit = false;
 
     void Start()
@@ -48,7 +49,7 @@ public class DeathZone : MonoBehaviour
         else
         {
             Debug.Log("Win!");
-            SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene(winSceneName);
         }
     }
 }
