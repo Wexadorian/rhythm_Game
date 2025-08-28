@@ -5,10 +5,10 @@ using UnityEngine;
 public class QuaverSpawner : MonoBehaviour
 {
     public GameObject quaverPrefab;
-    public GameObject quaver2Prefab;    // Drag the Note prefab here in the Inspector
+    public GameObject quaver2Prefab;    
     public Transform spawnPoint;
-    public Transform spawnPoint2;    // Where the notes appear from
-    public AudioSource musicSource;      // Your song audio source
+    public Transform spawnPoint2;    
+    public AudioSource musicSource;      
 
     [System.Serializable]
     public class NoteData

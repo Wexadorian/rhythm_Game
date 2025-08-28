@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quaverPrefab: {fileID: 4928534831041723793, guid: 5d258260485b4f049804570d4ec1ff4c, type: 3}
-  quaver2Prefab: {fileID: 4928534831041723793, guid: 718e6d06c615017449b555b0569df5bf, type: 3}
+  quaver2Prefab: {fileID: 7640470543605191197, guid: 9ccd7b17e1bf1fb4ab738ae9712de400, type: 3}
   spawnPoint: {fileID: 136900186}
   spawnPoint2: {fileID: 1972708253}
   musicSource: {fileID: 678637620}
@@ -2183,6 +2183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83c6cd55f351bbc4b827fc2d84d5c90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winSceneName: WinScene
   hit: 0
 --- !u!61 &1261354772
 BoxCollider2D:
@@ -2703,7 +2704,7 @@ Transform:
   m_GameObject: {fileID: 1972708251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.445, y: -0.063, z: -2}
+  m_LocalPosition: {x: 10.36, y: -0.08, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
