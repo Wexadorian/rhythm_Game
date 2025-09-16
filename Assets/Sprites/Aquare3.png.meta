@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f3065897e817cf4bbd97a56fde562d8
+guid: 11632c2a8d064c84fa582209d79017df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1358727217043113075
-    second: colours2_0
+      213: 1093757684846853711
+    second: Aquare3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: colours2_0
+      name: Aquare3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 284
-        height: 177
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8b7d718bc4d42de0800000000000000
-      internalID: -1358727217043113075
+      spriteID: f4e76a3c1decd2f00800000000000000
+      internalID: 1093757684846853711
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      colours2_0: -1358727217043113075
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
