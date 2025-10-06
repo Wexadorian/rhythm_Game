@@ -17,7 +17,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
-
+    public void ToCredits()
+    {
+        SceneManager.LoadSceneAsync("Credits");
+    }
     public void Level1()
     {
         SceneManager.LoadSceneAsync(2);
